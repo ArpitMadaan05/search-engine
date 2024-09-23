@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #98c1e9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #cbf4b5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h1 {
+    color: #e951c0;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8a5be6;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #89ee70;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+#search-input:focus {
+    border-color: #34a853;
+    box-shadow: 0 0 5px #34a853;
+}
+
+#search-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#search-button:hover {
+    background-color: #155ab6;
+}
+
+
+.history-section {
+    margin-top: 25px;
+}
+
+#search-history {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+#search-history li {
+    background-color: #87dbef;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border-left: 4px solid #1a73e8;
+    transition: all 0.3s ease;
+}
+
+
+#search-history li:hover {
+    background-color: #bbdefb;
+    border-left-color: #155ab6;
+}
+
+#clear-history {
+    padding: 10px 20px;
+    background-color: #e21b09;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for clear history button */
+#clear-history:hover {
+    background-color: #d93025;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #search-input {
+        width: 100%;
+    }
+
+    #search-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+}
